@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <title>Transforming Into Light</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/mystyle.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .til-row-padding img {
+      margin-bottom: 12px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .til-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px;
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body class="til-black">
+    <div class="container-fluid">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="til-sidebar til-bar-block til-small til-hide-small til-center">
+      <!-- Avatar image in top left corner -->
+      <img src="./images/logo.png" style="width: 100%" />
+      <a href="#" class="til-bar-item til-button til-padding-large til-black ">
+        <i class="fa fa-home til-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="til-bar-item til-button til-padding-large til-hover-black"
+      >
+        <i class="fa fa-user til-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#videos"
+        class="til-bar-item til-button til-padding-large til-hover-black"
+      >
+        <i class="fa fa-video til-xxlarge"></i>
+        <p>MY VIDEOS</p>
+      </a>
+      <a
+        href="#contact"
+        class="til-bar-item til-button til-padding-large til-hover-black"
+      >
+        <i class="fa fa-envelope til-xxlarge"></i>
+        <p>CONTACT ME</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="til-top til-hide-large til-hide-medium">
+      <!-- <div
+        class="til-bar til-black til-opacity til-hover-opacity-off til-center til-small">
+        <a href="#" class="til-bar-item til-button" style="width: 25% !important">
+          HOME</a
+        >
+        <a
+          href="#about"
+          class="til-bar-item til-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#videos"
+          class="til-bar-item til-button"
+          style="width: 25% !important"
+          >VIDEOS</a
+        >
+        <a
+          href="#contact"
+          class="til-bar-item til-button"
+          style="width: 25% !important"
+          >CONTACT</a
+        >
+      </div> -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">VIDOES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="til-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="til-center til-black" id="home">
+        <img
+        src="./images/banner.png"
+        alt="my-banner"
+        class="til-image"
+        width="400"
+       
+      />
+        <h1 class="til-jumbo">
+          <span class="til-hide-small">I'm</span> Shailesh Khanal.
+        </h1>
+        <p>Web Designer By Profession, Singer / Musician By Passion</p>
+       
+      </header>
+
+      <!-- About Section -->
+      <div class="til-content til-justify til-text-grey til-padding-64" id="about">
+        <h2 class="til-text-light-grey">I go by stage name: Transforming Into Light!</h2>
+        <hr style="width: 668px" class="til-opacity" />
+        <p>
+          My name is Shailesh and I’m web designer by profession and guitarist/musician by passion! Music and web design has always fascinated me.
+          I have over 4 years of experience in solving business problems using my graphic design
+           expertise which includes working with shapes and symbols, images, typography and illustrations 
+           to reflect business ideas and messages. I have designed hundreds of logos and infographics so far. 
+           Regarding my musical career,
+            I have released one album titled "Cosmic Soul" and it's available in all popular music platforms
+             like Spotify, Apple Music, Deezer and Amazon music. I have several nepali original songs too which
+              I haven't released officailly yet but it's available on my Youtube channel.
+              You can check out my youtube channel clicking on this link: <a href="https://www.youtube.com/shylaysh" target="blank">My Youtube Channel</a>
+        </p>
+        <h3 class="til-padding-16 til-text-light-grey">My Skills</h3>
+        <p class="til-wide">Singing</p>
+        <div class="til-white">
+          <div class="til-dark-grey" style="height: 28px; width: 95%"></div>
+        </div>
+        <p class="til-wide">Web Design</p>
+        <div class="til-white">
+          <div class="til-dark-grey" style="height: 28px; width: 85%"></div>
+        </div>
+        <p class="til-wide">Guitar</p>
+        <div class="til-white">
+          <div class="til-dark-grey" style="height: 28px; width: 80%"></div>
+        </div>
+        <br />
+
+        <div class="til-row til-center til-padding-16 til-section til-light-grey">
+          <div class="til-quarter til-section">
+            <span class="til-xlarge">11+</span><br />
+            Associated artists
+          </div>
+          <div class="til-quarter til-section"> 
+            <span class="til-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="til-quarter til-section">
+            <span class="til-xlarge">89+</span><br />
+            Fan base
+          </div>
+          <div class="til-quarter til-section">
+            <span class="til-xlarge">150+</span><br />
+            Gigs and concerts
+          </div>
+        </div>
+
+        <button class="til-button til-light-grey til-padding-large til-section">
+          <i class="fa fa-download"></i> Download PDF about "Transforming Into Light"
+        </button>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="til-padding-16 til-text-light-grey">Learn with me!</h3>
+        <div class="til-row-padding" style="margin: 0 -16px">
+          <div class="til-half til-margin-bottom">
+            <ul
+              class="til-ul til-white til-center til-opacity til-hover-opacity-off"
+            >
+              <li class="til-dark-grey til-xlarge til-padding-32">Graphics & Design</li>
+              <li class="til-padding-16">Web Design</li>
+              <li class="til-padding-16">Logo Design</li>
+              <li class="til-padding-16">Infographics</li>
+              <li class="til-padding-16">Brand Identity</li>
+              <li class="til-padding-16">
+                <h2>$ 40</h2>
+                <span class="til-opacity">per month</span>
+              </li>
+              <li class="til-light-grey til-padding-24">
+                <button
+                  class="til-button til-white til-padding-large til-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="til-half">
+            <ul
+              class="til-ul til-white til-center til-opacity til-hover-opacity-off"
+            >
+              <li class="til-dark-grey til-xlarge til-padding-32">Guitar & Vocal</li>
+              <li class="til-padding-16">Guitar Playing</li>
+              <li class="til-padding-16">Music Theory</li>
+              <li class="til-padding-16">Advanced Guitar Skills</li>
+              <li class="til-padding-16">Vocal Classes</li>
+              <li class="til-padding-16">
+                <h2>$ 50</h2>
+                <span class="til-opacity">per month</span>
+              </li>
+              <li class="til-light-grey til-padding-24">
+                <button
+                  class="til-button til-white til-padding-large til-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- End Grid/Pricing tables -->
+        </div>
+
+        <!-- Testimonials -->
+        <h3 class="til-padding-24 til-text-light-grey">My Happy Clients</h3>
+        <img
+          src="./images/chris.jpg"
+          alt="Avatar"
+          class="til-left til-circle til-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="til-large til-margin-right">Chris Fox.</span> CEO at Mighty
+          Schools.
+        </p>
+        <p>Shailesh saved us from a web disaster.</p>
+        <br />
+
+        <img
+          src="./images/rebecca.jpg"
+          alt="Avatar"
+          class="til-left til-circle til-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="til-large til-margin-right">Rebecca Flex.</span> CEO at
+          Company.
+        </p>
+        <p>He's one of the best web designer we've ever worked with!</p>
+        <!-- End About Section -->
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="til-padding-64 til-content" id="videos">
+        <h2 class="til-text-light-grey">MY ORIGINAL SONGS</h2>
+        <hr style="width: 200px" class="til-opacity" />
+      <div class="my-vids">  <iframe width="560" height="315" src="https://www.youtube.com/embed/NMonURyw1Ks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br><div class="my-vids">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WcYrk95UmE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>          <br>
+        <div class="my-vids"><iframe width="560" height="315" src="https://www.youtube.com/embed/wvUrzlwEtE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+        <div class="my-vids"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZBAb2Xs_Ctw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+        <div class="my-vids"><iframe width="560" height="315" src="https://www.youtube.com/embed/-yCUaZqFi4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>   
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/-8HP0ivZzmU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+        <div class="my-vids"><iframe width="560" height="315" src="https://www.youtube.com/embed/mGo6Lli5N7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/YR3W3LHNo9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/W3E-1CXR3kI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/5Oc4R-3TJTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/oYPTSYvDYvg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/BBVUbJGTld8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/Mvlt3ymmZbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br>
+       <div class="my-vids"> <iframe width="560" height="315" src="https://www.youtube.com/embed/uo_Y3xXLIG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+  
+        </div>
+        <!-- End Portfolio Section -->
+
+      <!-- Contact Section -->
+      <div class="til-padding-64 til-content til-text-grey" id="contact">
+        <h2 class="til-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="til-opacity" />
+
+        <div class="til-section">
+          <p>
+            <i
+              class="fa fa-map-marker fa-fw til-text-white til-xxlarge til-margin-right"
+            ></i>
+            Kathmandu, Nepal
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw til-text-white til-xxlarge til-margin-right"
+            ></i>
+            Phone: +977 9845000000
+          </p>
+          <p>
+            <i
+              class="fa fa-envelope fa-fw til-text-white til-xxlarge til-margin-right"
+            >
+            </i>
+            Email: shylaysh@gmail.com
+          </p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="til-input til-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="til-input til-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="til-input til-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="til-input til-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="til-button til-light-grey til-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="til-content til-padding-64 til-text-grey til-xlarge">
+        <i class="fa fa-facebook-official til-hover-opacity"></i>
+        <i class="fa fa-instagram til-hover-opacity"></i>
+        <i class="fa fa-snapchat til-hover-opacity"></i>
+        <i class="fa fa-pinterest-p til-hover-opacity"></i>
+        <i class="fa fa-twitter til-hover-opacity"></i>
+        <i class="fa fa-linkedin til-hover-opacity"></i>
+        <p class="til-medium">
+         Copyright 2021 <i class="fas fa-copyright"></i> Transforming Into Light
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

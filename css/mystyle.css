@@ -1,0 +1,1638 @@
+/* til.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+progress {
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+figure {
+  margin: 1em 40px;
+}
+img {
+  border-style: none;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+button,
+input,
+select,
+textarea,
+optgroup {
+  font: inherit;
+  margin: 0;
+}
+optgroup {
+  font-weight: bold;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+/* End extract */
+html,
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+html {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+.til-serif {
+  font-family: serif;
+}
+.til-sans-serif {
+  font-family: sans-serif;
+}
+.til-cursive {
+  font-family: cursive;
+}
+.til-monospace {
+  font-family: monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.til-wide {
+  letter-spacing: 4px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+.til-image {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: inherit;
+}
+.til-table,
+.til-table-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}
+.til-table-all {
+  border: 1px solid #ccc;
+}
+.til-bordered tr,
+.til-table-all tr {
+  border-bottom: 1px solid #ddd;
+}
+.til-striped tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+.til-table-all tr:nth-child(odd) {
+  background-color: #fff;
+}
+.til-table-all tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+.til-hoverable tbody tr:hover,
+.til-ul.til-hoverable li:hover {
+  background-color: #ccc;
+}
+.til-centered tr th,
+.til-centered tr td {
+  text-align: center;
+}
+.til-table td,
+.til-table th,
+.til-table-all td,
+.til-table-all th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.til-table th:first-child,
+.til-table td:first-child,
+.til-table-all th:first-child,
+.til-table-all td:first-child {
+  padding-left: 16px;
+}
+.til-btn,
+.til-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.til-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.til-btn,
+.til-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.til-disabled,
+.til-btn:disabled,
+.til-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.til-disabled *,
+:disabled * {
+  pointer-events: none;
+}
+
+.my-vids {
+  border-style: outset;
+  border-color: #07aa64;
+  width: 575px;
+  height: 330px;
+  padding: 5px;
+}
+
+.til-btn.til-disabled:hover,
+.til-btn:disabled:hover {
+  box-shadow: none;
+}
+.til-badge,
+.til-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+.til-badge {
+  border-radius: 50%;
+}
+.til-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.til-ul li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+.til-ul li:last-child {
+  border-bottom: none;
+}
+.til-tooltip,
+.til-display-container {
+  position: relative;
+}
+.til-tooltip .til-text {
+  display: none;
+}
+.til-tooltip:hover .til-text {
+  display: inline-block;
+}
+.til-ripple:active {
+  opacity: 0.5;
+}
+.til-ripple {
+  transition: opacity 0s;
+}
+.til-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.til-select {
+  padding: 9px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.til-dropdown-click,
+.til-dropdown-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.til-dropdown-hover:hover .til-dropdown-content {
+  display: block;
+}
+.til-dropdown-hover:first-child,
+.til-dropdown-click:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.til-dropdown-hover:hover > .til-button:first-child,
+.til-dropdown-click:hover > .til-button:first-child {
+  background-color: #ccc;
+  color: #000;
+}
+.til-dropdown-content {
+  cursor: auto;
+  color: #000;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.til-check,
+.til-radio {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+.til-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+.til-bar-block .til-dropdown-hover,
+.til-bar-block .til-dropdown-click {
+  width: 100%;
+}
+.til-bar-block .til-dropdown-hover .til-dropdown-content,
+.til-bar-block .til-dropdown-click .til-dropdown-content {
+  min-width: 100%;
+}
+.til-bar-block .til-dropdown-hover .til-button,
+.til-bar-block .til-dropdown-click .til-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+}
+.til-main,
+#main {
+  transition: margin-left 0.4s;
+}
+.til-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.til-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px;
+}
+.til-bar {
+  width: 100%;
+  overflow: hidden;
+}
+.til-center .til-bar {
+  display: inline-block;
+  width: auto;
+}
+.til-bar .til-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+.til-bar .til-dropdown-hover,
+.til-bar .til-dropdown-click {
+  position: static;
+  float: left;
+}
+.til-bar .til-button {
+  white-space: normal;
+}
+.til-bar-block .til-bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+.til-bar-block.til-center .til-bar-item {
+  text-align: center;
+}
+.til-block {
+  display: block;
+  width: 100%;
+}
+.til-responsive {
+  display: block;
+  overflow-x: auto;
+}
+.til-container:after,
+.til-container:before,
+.til-panel:after,
+.til-panel:before,
+.til-row:after,
+.til-row:before,
+.til-row-padding:after,
+.til-row-padding:before,
+.til-cell-row:before,
+.til-cell-row:after,
+.til-clear:after,
+.til-clear:before,
+.til-bar:before,
+.til-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.til-col,
+.til-half,
+.til-third,
+.til-twothird,
+.til-threequarter,
+.til-quarter {
+  float: left;
+  width: 100%;
+}
+.til-col.s1 {
+  width: 8.33333%;
+}
+.til-col.s2 {
+  width: 16.66666%;
+}
+.til-col.s3 {
+  width: 24.99999%;
+}
+.til-col.s4 {
+  width: 33.33333%;
+}
+.til-col.s5 {
+  width: 41.66666%;
+}
+.til-col.s6 {
+  width: 49.99999%;
+}
+.til-col.s7 {
+  width: 58.33333%;
+}
+.til-col.s8 {
+  width: 66.66666%;
+}
+.til-col.s9 {
+  width: 74.99999%;
+}
+.til-col.s10 {
+  width: 83.33333%;
+}
+.til-col.s11 {
+  width: 91.66666%;
+}
+.til-col.s12 {
+  width: 99.99999%;
+}
+@media (min-width: 601px) {
+  .til-col.m1 {
+    width: 8.33333%;
+  }
+  .til-col.m2 {
+    width: 16.66666%;
+  }
+  .til-col.m3,
+  .til-quarter {
+    width: 24.99999%;
+  }
+  .til-col.m4,
+  .til-third {
+    width: 33.33333%;
+  }
+  .til-col.m5 {
+    width: 41.66666%;
+  }
+  .til-col.m6,
+  .til-half {
+    width: 49.99999%;
+  }
+  .til-col.m7 {
+    width: 58.33333%;
+  }
+  .til-col.m8,
+  .til-twothird {
+    width: 66.66666%;
+  }
+  .til-col.m9,
+  .til-threequarter {
+    width: 74.99999%;
+  }
+  .til-col.m10 {
+    width: 83.33333%;
+  }
+  .til-col.m11 {
+    width: 91.66666%;
+  }
+  .til-col.m12 {
+    width: 99.99999%;
+  }
+}
+@media (min-width: 993px) {
+  .til-col.l1 {
+    width: 8.33333%;
+  }
+  .til-col.l2 {
+    width: 16.66666%;
+  }
+  .til-col.l3 {
+    width: 24.99999%;
+  }
+  .til-col.l4 {
+    width: 33.33333%;
+  }
+  .til-col.l5 {
+    width: 41.66666%;
+  }
+  .til-col.l6 {
+    width: 49.99999%;
+  }
+  .til-col.l7 {
+    width: 58.33333%;
+  }
+  .til-col.l8 {
+    width: 66.66666%;
+  }
+  .til-col.l9 {
+    width: 74.99999%;
+  }
+  .til-col.l10 {
+    width: 83.33333%;
+  }
+  .til-col.l11 {
+    width: 91.66666%;
+  }
+  .til-col.l12 {
+    width: 99.99999%;
+  }
+}
+.til-rest {
+  overflow: hidden;
+}
+.til-stretch {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.til-content,
+.til-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.til-content {
+  max-width: 980px;
+}
+.til-auto {
+  max-width: 1140px;
+}
+.til-cell-row {
+  display: table;
+  width: 100%;
+}
+.til-cell {
+  display: table-cell;
+}
+.til-cell-top {
+  vertical-align: top;
+}
+.til-cell-middle {
+  vertical-align: middle;
+}
+.til-cell-bottom {
+  vertical-align: bottom;
+}
+.til-hide {
+  display: none !important;
+}
+.til-show-block,
+.til-show {
+  display: block !important;
+}
+.til-show-inline-block {
+  display: inline-block !important;
+}
+@media (max-width: 1205px) {
+  .til-auto {
+    max-width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .til-modal-content {
+    margin: 0 10px;
+    width: auto !important;
+  }
+  .til-modal {
+    padding-top: 30px;
+  }
+  .til-dropdown-hover.til-mobile .til-dropdown-content,
+  .til-dropdown-click.til-mobile .til-dropdown-content {
+    position: relative;
+  }
+  .til-hide-small {
+    display: none !important;
+  }
+  .til-mobile {
+    display: block;
+    width: 100% !important;
+  }
+  .til-bar-item.til-mobile,
+  .til-dropdown-hover.til-mobile,
+  .til-dropdown-click.til-mobile {
+    text-align: center;
+  }
+  .til-dropdown-hover.til-mobile,
+  .til-dropdown-hover.til-mobile .til-btn,
+  .til-dropdown-hover.til-mobile .til-button,
+  .til-dropdown-click.til-mobile,
+  .til-dropdown-click.til-mobile .til-btn,
+  .til-dropdown-click.til-mobile .til-button {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .til-modal-content {
+    width: 500px;
+  }
+  .til-modal {
+    padding-top: 50px;
+  }
+
+  .til-content iframe {
+    width: 100%;
+  }
+  .til-medium p {
+    text-align: center;
+  }
+}
+@media (min-width: 993px) {
+  .til-modal-content {
+    width: 900px;
+  }
+  .til-hide-large {
+    display: none !important;
+  }
+  .til-sidebar.til-collapse {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 601px) {
+  .til-hide-medium {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .til-sidebar.til-collapse {
+    display: none;
+  }
+  .til-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .til-auto {
+    max-width: 100%;
+  }
+}
+.til-top,
+.til-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.til-top {
+  top: 0;
+}
+.til-bottom {
+  bottom: 0;
+}
+.til-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.til-display-topleft {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.til-display-topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.til-display-bottomleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.til-display-bottomright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.til-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.til-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+}
+.til-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+.til-display-topmiddle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+.til-display-bottommiddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+.til-display-container:hover .til-display-hover {
+  display: block;
+}
+.til-display-container:hover span.til-display-hover {
+  display: inline-block;
+}
+.til-display-hover {
+  display: none;
+}
+.til-display-position {
+  position: absolute;
+}
+.til-circle {
+  border-radius: 50%;
+}
+.til-round-small {
+  border-radius: 2px;
+}
+.til-round,
+.til-round-medium {
+  border-radius: 4px;
+}
+.til-round-large {
+  border-radius: 8px;
+}
+.til-round-xlarge {
+  border-radius: 16px;
+}
+.til-round-xxlarge {
+  border-radius: 32px;
+}
+.til-row-padding,
+.til-row-padding > .til-half,
+.til-row-padding > .til-third,
+.til-row-padding > .til-twothird,
+.til-row-padding > .til-threequarter,
+.til-row-padding > .til-quarter,
+.til-row-padding > .til-col {
+  padding: 0 8px;
+}
+.til-container,
+.til-panel {
+  padding: 0.01em 16px;
+}
+.til-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.til-code,
+.til-codespan {
+  font-family: Consolas, "courier new";
+  font-size: 16px;
+}
+.til-code {
+  width: auto;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-left: 4px solid #4caf50;
+  word-wrap: break-word;
+}
+.til-codespan {
+  color: crimson;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+}
+.til-card,
+.til-card-2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.til-card-4,
+.til-hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.til-spin {
+  animation: til-spin 2s infinite linear;
+}
+@keyframes til-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.til-animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.til-animate-opacity {
+  animation: opac 0.8s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.til-animate-top {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.til-animate-left {
+  position: relative;
+  animation: animateleft 0.4s;
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.til-animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+}
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.til-animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.til-animate-zoom {
+  animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.til-animate-input {
+  transition: width 0.4s ease-in-out;
+}
+.til-animate-input:focus {
+  width: 100% !important;
+}
+.til-opacity,
+.til-hover-opacity:hover {
+  opacity: 0.6;
+}
+.til-opacity-off,
+.til-hover-opacity-off:hover {
+  opacity: 1;
+}
+.til-opacity-max {
+  opacity: 0.25;
+}
+.til-opacity-min {
+  opacity: 0.75;
+}
+.til-greyscale-max,
+.til-grayscale-max,
+.til-hover-greyscale:hover,
+.til-hover-grayscale:hover {
+  filter: grayscale(100%);
+}
+.til-greyscale,
+.til-grayscale {
+  filter: grayscale(75%);
+}
+.til-greyscale-min,
+.til-grayscale-min {
+  filter: grayscale(50%);
+}
+.til-sepia {
+  filter: sepia(75%);
+}
+.til-sepia-max,
+.til-hover-sepia:hover {
+  filter: sepia(100%);
+}
+.til-sepia-min {
+  filter: sepia(50%);
+}
+.til-tiny {
+  font-size: 10px !important;
+}
+.til-small {
+  font-size: 12px !important;
+}
+.til-medium {
+  font-size: 15px !important;
+}
+.til-large {
+  font-size: 18px !important;
+}
+.til-xlarge {
+  font-size: 24px !important;
+}
+.til-xxlarge {
+  font-size: 36px !important;
+}
+.til-xxxlarge {
+  font-size: 48px !important;
+}
+.til-jumbo {
+  font-size: 64px !important;
+}
+.til-left-align {
+  text-align: left !important;
+}
+.til-right-align {
+  text-align: right !important;
+}
+.til-justify {
+  text-align: justify !important;
+}
+.til-center {
+  text-align: center !important;
+}
+.til-border-0 {
+  border: 0 !important;
+}
+.til-border {
+  border: 1px solid #ccc !important;
+}
+.til-border-top {
+  border-top: 1px solid #ccc !important;
+}
+.til-border-bottom {
+  border-bottom: 1px solid #ccc !important;
+}
+.til-border-left {
+  border-left: 1px solid #ccc !important;
+}
+.til-border-right {
+  border-right: 1px solid #ccc !important;
+}
+.til-topbar {
+  border-top: 6px solid #ccc !important;
+}
+.til-bottombar {
+  border-bottom: 6px solid #ccc !important;
+}
+.til-leftbar {
+  border-left: 6px solid #ccc !important;
+}
+.til-rightbar {
+  border-right: 6px solid #ccc !important;
+}
+.til-section,
+.til-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+.til-margin {
+  margin: 16px !important;
+}
+.til-margin-top {
+  margin-top: 16px !important;
+}
+.til-margin-bottom {
+  margin-bottom: 16px !important;
+}
+.til-margin-left {
+  margin-left: 16px !important;
+}
+.til-margin-right {
+  margin-right: 16px !important;
+}
+.til-padding-small {
+  padding: 4px 8px !important;
+}
+.til-padding {
+  padding: 8px 16px !important;
+}
+.til-padding-large {
+  padding: 12px 24px !important;
+}
+.til-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+.til-padding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+.til-padding-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.til-padding-48 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+.til-padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+.til-padding-top-64 {
+  padding-top: 64px !important;
+}
+.til-padding-top-48 {
+  padding-top: 48px !important;
+}
+.til-padding-top-32 {
+  padding-top: 32px !important;
+}
+.til-padding-top-24 {
+  padding-top: 24px !important;
+}
+.til-left {
+  float: left !important;
+}
+.til-right {
+  float: right !important;
+}
+.til-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+.til-transparent,
+.til-hover-none:hover {
+  background-color: transparent !important;
+}
+.til-hover-none:hover {
+  box-shadow: none !important;
+}
+/* Colors */
+.til-amber,
+.til-hover-amber:hover {
+  color: #000 !important;
+  background-color: #ffc107 !important;
+}
+.til-aqua,
+.til-hover-aqua:hover {
+  color: #000 !important;
+  background-color: #00ffff !important;
+}
+.til-blue,
+.til-hover-blue:hover {
+  color: #fff !important;
+  background-color: #2196f3 !important;
+}
+.til-light-blue,
+.til-hover-light-blue:hover {
+  color: #000 !important;
+  background-color: #87ceeb !important;
+}
+.til-brown,
+.til-hover-brown:hover {
+  color: #fff !important;
+  background-color: #795548 !important;
+}
+.til-cyan,
+.til-hover-cyan:hover {
+  color: #000 !important;
+  background-color: #00bcd4 !important;
+}
+.til-blue-grey,
+.til-hover-blue-grey:hover,
+.til-blue-gray,
+.til-hover-blue-gray:hover {
+  color: #fff !important;
+  background-color: #607d8b !important;
+}
+.til-green,
+.til-hover-green:hover {
+  color: #fff !important;
+  background-color: #4caf50 !important;
+}
+.til-light-green,
+.til-hover-light-green:hover {
+  color: #000 !important;
+  background-color: #8bc34a !important;
+}
+.til-indigo,
+.til-hover-indigo:hover {
+  color: #fff !important;
+  background-color: #3f51b5 !important;
+}
+.til-khaki,
+.til-hover-khaki:hover {
+  color: #000 !important;
+  background-color: #f0e68c !important;
+}
+.til-lime,
+.til-hover-lime:hover {
+  color: #000 !important;
+  background-color: #cddc39 !important;
+}
+.til-orange,
+.til-hover-orange:hover {
+  color: #000 !important;
+  background-color: #ff9800 !important;
+}
+.til-deep-orange,
+.til-hover-deep-orange:hover {
+  color: #fff !important;
+  background-color: #ff5722 !important;
+}
+.til-pink,
+.til-hover-pink:hover {
+  color: #fff !important;
+  background-color: #e91e63 !important;
+}
+.til-purple,
+.til-hover-purple:hover {
+  color: #fff !important;
+  background-color: #9c27b0 !important;
+}
+.til-deep-purple,
+.til-hover-deep-purple:hover {
+  color: #fff !important;
+  background-color: #673ab7 !important;
+}
+.til-red,
+.til-hover-red:hover {
+  color: #fff !important;
+  background-color: #f44336 !important;
+}
+.til-sand,
+.til-hover-sand:hover {
+  color: #000 !important;
+  background-color: #fdf5e6 !important;
+}
+.til-teal,
+.til-hover-teal:hover {
+  color: #fff !important;
+  background-color: #009688 !important;
+}
+.til-yellow,
+.til-hover-yellow:hover {
+  color: #000 !important;
+  background-color: #ffeb3b !important;
+}
+.til-white,
+.til-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+.til-black,
+.til-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.til-grey,
+.til-hover-grey:hover,
+.til-gray,
+.til-hover-gray:hover {
+  color: #000 !important;
+  background-color: #9e9e9e !important;
+}
+.til-light-grey,
+.til-hover-light-grey:hover,
+.til-light-gray,
+.til-hover-light-gray:hover {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+}
+.til-dark-grey,
+.til-hover-dark-grey:hover,
+.til-dark-gray,
+.til-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: #616161 !important;
+}
+.til-pale-red,
+.til-hover-pale-red:hover {
+  color: #000 !important;
+  background-color: #ffdddd !important;
+}
+.til-pale-green,
+.til-hover-pale-green:hover {
+  color: #000 !important;
+  background-color: #ddffdd !important;
+}
+.til-pale-yellow,
+.til-hover-pale-yellow:hover {
+  color: #000 !important;
+  background-color: #ffffcc !important;
+}
+.til-pale-blue,
+.til-hover-pale-blue:hover {
+  color: #000 !important;
+  background-color: #ddffff !important;
+}
+.til-text-amber,
+.til-hover-text-amber:hover {
+  color: #ffc107 !important;
+}
+.til-text-aqua,
+.til-hover-text-aqua:hover {
+  color: #00ffff !important;
+}
+.til-text-blue,
+.til-hover-text-blue:hover {
+  color: #2196f3 !important;
+}
+.til-text-light-blue,
+.til-hover-text-light-blue:hover {
+  color: #87ceeb !important;
+}
+.til-text-brown,
+.til-hover-text-brown:hover {
+  color: #795548 !important;
+}
+.til-text-cyan,
+.til-hover-text-cyan:hover {
+  color: #00bcd4 !important;
+}
+.til-text-blue-grey,
+.til-hover-text-blue-grey:hover,
+.til-text-blue-gray,
+.til-hover-text-blue-gray:hover {
+  color: #607d8b !important;
+}
+.til-text-green,
+.til-hover-text-green:hover {
+  color: #4caf50 !important;
+}
+.til-text-light-green,
+.til-hover-text-light-green:hover {
+  color: #8bc34a !important;
+}
+.til-text-indigo,
+.til-hover-text-indigo:hover {
+  color: #3f51b5 !important;
+}
+.til-text-khaki,
+.til-hover-text-khaki:hover {
+  color: #b4aa50 !important;
+}
+.til-text-lime,
+.til-hover-text-lime:hover {
+  color: #cddc39 !important;
+}
+.til-text-orange,
+.til-hover-text-orange:hover {
+  color: #ff9800 !important;
+}
+.til-text-deep-orange,
+.til-hover-text-deep-orange:hover {
+  color: #ff5722 !important;
+}
+.til-text-pink,
+.til-hover-text-pink:hover {
+  color: #e91e63 !important;
+}
+.til-text-purple,
+.til-hover-text-purple:hover {
+  color: #9c27b0 !important;
+}
+.til-text-deep-purple,
+.til-hover-text-deep-purple:hover {
+  color: #673ab7 !important;
+}
+.til-text-red,
+.til-hover-text-red:hover {
+  color: #f44336 !important;
+}
+.til-text-sand,
+.til-hover-text-sand:hover {
+  color: #fdf5e6 !important;
+}
+.til-text-teal,
+.til-hover-text-teal:hover {
+  color: #009688 !important;
+}
+.til-text-yellow,
+.til-hover-text-yellow:hover {
+  color: #d2be0e !important;
+}
+.til-text-white,
+.til-hover-text-white:hover {
+  color: #fff !important;
+}
+.til-text-black,
+.til-hover-text-black:hover {
+  color: #000 !important;
+}
+.til-text-grey,
+.til-hover-text-grey:hover,
+.til-text-gray,
+.til-hover-text-gray:hover {
+  color: #757575 !important;
+}
+.til-text-light-grey,
+.til-hover-text-light-grey:hover,
+.til-text-light-gray,
+.til-hover-text-light-gray:hover {
+  color: #f1f1f1 !important;
+}
+.til-text-dark-grey,
+.til-hover-text-dark-grey:hover,
+.til-text-dark-gray,
+.til-hover-text-dark-gray:hover {
+  color: #3a3a3a !important;
+}
+.til-border-amber,
+.til-hover-border-amber:hover {
+  border-color: #ffc107 !important;
+}
+.til-border-aqua,
+.til-hover-border-aqua:hover {
+  border-color: #00ffff !important;
+}
+.til-border-blue,
+.til-hover-border-blue:hover {
+  border-color: #2196f3 !important;
+}
+.til-border-light-blue,
+.til-hover-border-light-blue:hover {
+  border-color: #87ceeb !important;
+}
+.til-border-brown,
+.til-hover-border-brown:hover {
+  border-color: #795548 !important;
+}
+.til-border-cyan,
+.til-hover-border-cyan:hover {
+  border-color: #00bcd4 !important;
+}
+.til-border-blue-grey,
+.til-hover-border-blue-grey:hover,
+.til-border-blue-gray,
+.til-hover-border-blue-gray:hover {
+  border-color: #607d8b !important;
+}
+.til-border-green,
+.til-hover-border-green:hover {
+  border-color: #4caf50 !important;
+}
+.til-border-light-green,
+.til-hover-border-light-green:hover {
+  border-color: #8bc34a !important;
+}
+.til-border-indigo,
+.til-hover-border-indigo:hover {
+  border-color: #3f51b5 !important;
+}
+.til-border-khaki,
+.til-hover-border-khaki:hover {
+  border-color: #f0e68c !important;
+}
+.til-border-lime,
+.til-hover-border-lime:hover {
+  border-color: #cddc39 !important;
+}
+.til-border-orange,
+.til-hover-border-orange:hover {
+  border-color: #ff9800 !important;
+}
+.til-border-deep-orange,
+.til-hover-border-deep-orange:hover {
+  border-color: #ff5722 !important;
+}
+.til-border-pink,
+.til-hover-border-pink:hover {
+  border-color: #e91e63 !important;
+}
+.til-border-purple,
+.til-hover-border-purple:hover {
+  border-color: #9c27b0 !important;
+}
+.til-border-deep-purple,
+.til-hover-border-deep-purple:hover {
+  border-color: #673ab7 !important;
+}
+.til-border-red,
+.til-hover-border-red:hover {
+  border-color: #f44336 !important;
+}
+.til-border-sand,
+.til-hover-border-sand:hover {
+  border-color: #fdf5e6 !important;
+}
+.til-border-teal,
+.til-hover-border-teal:hover {
+  border-color: #009688 !important;
+}
+.til-border-yellow,
+.til-hover-border-yellow:hover {
+  border-color: #ffeb3b !important;
+}
+.til-border-white,
+.til-hover-border-white:hover {
+  border-color: #fff !important;
+}
+.til-border-black,
+.til-hover-border-black:hover {
+  border-color: #000 !important;
+}
+.til-border-grey,
+.til-hover-border-grey:hover,
+.til-border-gray,
+.til-hover-border-gray:hover {
+  border-color: #9e9e9e !important;
+}
+.til-border-light-grey,
+.til-hover-border-light-grey:hover,
+.til-border-light-gray,
+.til-hover-border-light-gray:hover {
+  border-color: #f1f1f1 !important;
+}
+.til-border-dark-grey,
+.til-hover-border-dark-grey:hover,
+.til-border-dark-gray,
+.til-hover-border-dark-gray:hover {
+  border-color: #616161 !important;
+}
+.til-border-pale-red,
+.til-hover-border-pale-red:hover {
+  border-color: #ffe7e7 !important;
+}
+.til-border-pale-green,
+.til-hover-border-pale-green:hover {
+  border-color: #e7ffe7 !important;
+}
+.til-border-pale-yellow,
+.til-hover-border-pale-yellow:hover {
+  border-color: #ffffcc !important;
+}
+.til-border-pale-blue,
+.til-hover-border-pale-blue:hover {
+  border-color: #e7ffff !important;
+}

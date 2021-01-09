@@ -47,7 +47,7 @@
     }
   </style>
   <body class="til-black">
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="til-sidebar til-bar-block til-small til-hide-small til-center">
       <!-- Avatar image in top left corner -->
@@ -79,57 +79,35 @@
       </a>
     </nav>
 
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="til-top til-hide-large til-hide-medium">
-      <!-- <div
-        class="til-bar til-black til-opacity til-hover-opacity-off til-center til-small">
-        <a href="#" class="til-bar-item til-button" style="width: 25% !important">
-          HOME</a
-        >
-        <a
-          href="#about"
-          class="til-bar-item til-button"
-          style="width: 25% !important"
-          >ABOUT</a
-        >
-        <a
-          href="#videos"
-          class="til-bar-item til-button"
-          style="width: 25% !important"
-          >VIDEOS</a
-        >
-        <a
-          href="#contact"
-          class="til-bar-item til-button"
-          style="width: 25% !important"
-          >CONTACT</a
-        >
-      </div> -->
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#videos">VIDOES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>    
-          </ul>
-        </div>  
-      </nav>
-
-
-    </div>
+   
+      <!-- Nav bar for small screen -->
+       
+          <nav class="navbar navbar-expand-md navbar-dark small-nav-bar">
+            <a class="navbar-brand" href="#">
+              <!-- <img src="./images/til-logo.png" class="border border-danger rounded-circle" style="width: 20%;"> -->
+            </a>
+            <button class="navbar-toggler border border-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">ABOUT </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#videos">VIDOES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">CONTACT</a>
+                </li>    
+              </ul>
+            </div>  
+          </nav>
+    
+    <!-- Nav bar for small screen ends -->
 
     <!-- Page Content -->
     <div class="til-padding-large" id="main">
@@ -143,15 +121,16 @@
        
       />
         <h1 class="til-jumbo">
-          <span class="til-hide-small">I'm</span> Shailesh Khanal.
+          <span class="til-hide-small">Hi! I'm</span> Shailesh Khanal
+        
         </h1>
-        <p>Web Designer By Profession, Singer / Musician By Passion</p>
+        <p class="text-muted"> Web Designer By Profession, Singer / Musician By Passion</p>
        
       </header>
 
       <!-- About Section -->
-      <div class="til-content til-justify til-text-grey til-padding-64" id="about">
-        <h2 class="til-text-light-grey">I go by stage name: Transforming Into Light!</h2>
+      <div class="til-content til-justify til-text-grey" id="about">
+        <h2 class="til-text-light-grey text-warning my-stage-name">I go by stage name: Transforming Into Light!</h2>
         <hr style="width: 668px" class="til-opacity" />
         <p>
           My name is Shailesh and I’m web designer by profession and guitarist/musician by passion! Music and web design has always fascinated me.
@@ -199,7 +178,7 @@
         </div>
 
         <button class="til-button til-light-grey til-padding-large til-section">
-          <i class="fa fa-download"></i> Download PDF about "Transforming Into Light"
+          <i class="fa fa-download"></i> Download PDF about TIL
         </button>
 
         <!-- Grid for pricing tables -->
@@ -283,7 +262,7 @@
       </div>
 
       <!-- Portfolio Section -->
-      <div class="til-padding-64 til-content" id="videos">
+      <div class="til-content pt-3" id="videos">
         <h2 class="til-text-light-grey">MY ORIGINAL SONGS</h2>
         <hr style="width: 200px" class="til-opacity" />
       <div class="my-vids">  <iframe width="560" height="315" src="https://www.youtube.com/embed/NMonURyw1Ks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -398,14 +377,14 @@
       </div>
 
       <!-- Footer -->
-      <footer class="til-content til-padding-64 til-text-grey til-xlarge">
+      <footer class="til-content til-padding-64 til-text-grey">
         <i class="fa fa-facebook-official til-hover-opacity"></i>
         <i class="fa fa-instagram til-hover-opacity"></i>
         <i class="fa fa-snapchat til-hover-opacity"></i>
         <i class="fa fa-pinterest-p til-hover-opacity"></i>
         <i class="fa fa-twitter til-hover-opacity"></i>
         <i class="fa fa-linkedin til-hover-opacity"></i>
-        <p class="til-medium">
+        <p>
          Copyright 2021 <i class="fas fa-copyright"></i> Transforming Into Light
         </p>
         <!-- End footer -->

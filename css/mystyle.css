@@ -629,6 +629,26 @@ a {
     width: 99.99999%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .small-nav-bar {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my-vids {
+    width: 100%;
+  }
+  .my-stage-name {
+    text-align: center;
+  }
+
+  .til-button {
+    width: 100%;
+  }
+}
+
 @media (min-width: 993px) {
   .til-col.l1 {
     width: 8.33333%;

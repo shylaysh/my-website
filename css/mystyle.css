@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap");
 /* til.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
   box-sizing: border-box;
@@ -77,12 +80,11 @@ mark {
   color: #000;
 }
 
-.icons i{
+.icons i {
   padding: 0.5rem;
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-
 }
 
 small {
@@ -447,10 +449,12 @@ a {
 .til-sidebar {
   height: 100%;
   width: 200px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: #000 !important;
   position: fixed !important;
   z-index: 1;
   overflow: auto;
+  border-right: #009688 groove;
 }
 
 .til-bar-block .til-dropdown-hover,
@@ -654,12 +658,13 @@ a {
   .my-vids {
     width: 100%;
   }
-  .my-stage-name {
-    text-align: center;
-  }
 
   .til-button {
     width: 100%;
+  }
+
+  .my-stage-name {
+    text-align: center;
   }
 }
 
@@ -712,7 +717,17 @@ a {
 .til-auto {
   margin-left: auto;
   margin-right: auto;
+  font-family: "Yusei Magic", sans-serif;
+  color: #eae8c3;
 }
+
+.sub-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #009688 !important;
+}
+
 .til-content {
   max-width: 980px;
 }
@@ -1359,6 +1374,18 @@ a {
   color: #fff !important;
   background-color: #673ab7 !important;
 }
+.my-stage-name {
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.intro {
+  font-family: "Kufam", cursive;
+}
+
+.logo-bg {
+  background-color: black;
+}
+
 .til-red,
 .til-hover-red:hover {
   color: #fff !important;
@@ -1401,8 +1428,24 @@ a {
 .til-light-gray,
 .til-hover-light-gray:hover {
   color: #000 !important;
-  background-color: #f1f1f1 !important;
+  background-color: #f8f2f2ec !important;
 }
+
+.nav-btn {
+  border: none !important;
+  outline: none !important;
+  padding: 10px 16px;
+  /* background-color: #f1f1f1; */
+  cursor: pointer !important;
+  font-size: 18px;
+}
+
+.active,
+.nav-btn:hover {
+  background-color: #666 !important;
+  color: white !important;
+}
+
 .til-dark-grey,
 .til-hover-dark-grey:hover,
 .til-dark-gray,

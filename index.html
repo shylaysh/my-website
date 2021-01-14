@@ -48,34 +48,39 @@
       }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
 </head>
   <body class="til-black">
     <div class="container-fluid p-0">
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="til-sidebar til-bar-block til-small til-hide-small til-center">
+    <nav class="til-sidebar til-bar-block til-small til-hide-small til-center" id="myNav">
       <!-- Avatar image in top left corner -->
-      <img src="./images/til-animation.gif" style="width: 100%" />
-      <a href="#" class="til-bar-item til-button til-padding-large til-black ">
+      <img src="./images/til-animation.gif" style="width: 100%" class="logo-bg"/>
+      
+      <!-- <a href="#" class="til-bar-item til-button til-padding-large til-black "> -->
+        <a href="#" class="til-bar-item til-button til-padding-large til-hover-black nav-btn active">
         <i class="fa fa-home til-xxlarge"></i>
         <p>HOME</p>
       </a>
       <a
         href="#about"
-        class="til-bar-item til-button til-padding-large til-hover-black"
+        class="til-bar-item til-button til-padding-large til-hover-black nav-btn "
       >
         <i class="fa fa-user til-xxlarge"></i>
         <p>ABOUT</p>
       </a>
       <a
         href="#videos"
-        class="til-bar-item til-button til-padding-large til-hover-black"
+        class="til-bar-item til-button til-padding-large til-hover-black nav-btn"
       >
         <i class="fa fa-video til-xxlarge"></i>
         <p>MY VIDEOS</p>
       </a>
       <a
         href="#contact"
-        class="til-bar-item til-button til-padding-large til-hover-black"
+        class="til-bar-item til-button til-padding-large til-hover-black nav-btn"
       >
         <i class="fa fa-envelope til-xxlarge"></i>
         <p>CONTACT ME</p>
@@ -123,17 +128,17 @@
         width="400"
        
       />
-        <h1 class="til-jumbo">
+        <h1 class="til-jumbo intro">
           <span class="til-hide-small">Hi! I'm</span> Shailesh Khanal
         
         </h1>
-        <p class="text-muted"> Web Designer By Profession, Singer / Musician By Passion</p>
+        <p class="sub-title"> Web Designer By Profession, Singer / Musician By Passion</p>
        
       </header>
 
       <!-- About Section -->
-      <div class="til-content til-justify til-text-grey" id="about">
-        <h2 class="til-text-light-grey text-warning my-stage-name">I go by stage name: Transforming Into Light!</h2>
+      <div class="til-content til-justify" id="about">
+        <h2 class="my-stage-name text-warning">I go by stage name: <span style="color:#e64c4c">Transforming Into Light!</span></h2>
         <hr style="width: 668px" class="til-opacity" />
         <p>
           My name is Shailesh and I’m web designer by profession and guitarist/musician by passion! Music and web design has always fascinated me.
@@ -144,7 +149,7 @@
             I have released one album titled "Cosmic Soul" and it's available in all popular music platforms
              like Spotify, Apple Music, Deezer and Amazon music. I have several nepali original songs too which
               I haven't released officailly yet but it's available on my Youtube channel.
-              You can check out my youtube channel clicking on this link: <a href="https://www.youtube.com/shylaysh" target="blank">My Youtube Channel</a>
+              You can check out my youtube channel clicking on this link: <a href="https://www.youtube.com/shylaysh" target="blank"><span style="color:#C71F1E;"><i class="fab fa-youtube fa-lg"></i></span></a>
         </p>
         <h3 class="til-padding-16 til-text-light-grey">My Skills</h3>
         <p class="til-wide">Singing</p>
@@ -163,19 +168,19 @@
 
         <div class="til-row til-center til-padding-16 til-section til-light-grey">
           <div class="til-quarter til-section">
-            <span class="til-xlarge">11+</span><br />
+            <span class="til-xlarge">6</span><br />
             Associated artists
           </div>
           <div class="til-quarter til-section"> 
-            <span class="til-xlarge">55+</span><br />
+            <span class="til-xlarge">50+</span><br />
             Projects Done
           </div>
           <div class="til-quarter til-section">
-            <span class="til-xlarge">89+</span><br />
+            <span class="til-xlarge">2000+</span><br />
             Fan base
           </div>
           <div class="til-quarter til-section">
-            <span class="til-xlarge">150+</span><br />
+            <span class="til-xlarge">100+</span><br />
             Gigs and concerts
           </div>
         </div>
@@ -185,26 +190,23 @@
         </button>
 
         <!-- Grid for pricing tables -->
-        <h3 class="til-padding-16 til-text-light-grey">Learn with me!</h3>
+        <h3 class="til-padding-16 til-text-light-grey">Take online class with me!</h3>
         <div class="til-row-padding" style="margin: 0 -16px">
           <div class="til-half til-margin-bottom">
             <ul
-              class="til-ul til-white til-center til-opacity til-hover-opacity-off"
+              class="til-ul til-white til-center"
             >
               <li class="til-dark-grey til-xlarge til-padding-32">Graphics & Design</li>
               <li class="til-padding-16">Web Design</li>
               <li class="til-padding-16">Logo Design</li>
               <li class="til-padding-16">Infographics</li>
               <li class="til-padding-16">Brand Identity</li>
-              <li class="til-padding-16">
-                <h2>$ 40</h2>
-                <span class="til-opacity">per month</span>
-              </li>
+          
               <li class="til-light-grey til-padding-24">
                 <button
-                  class="til-button til-white til-padding-large til-hover-black"
+                  class="til-button til-white til-padding-large til-hover-black border border-info"
                 >
-                  Sign Up
+                  Contact Me
                 </button>
               </li>
             </ul>
@@ -212,22 +214,19 @@
 
           <div class="til-half">
             <ul
-              class="til-ul til-white til-center til-opacity til-hover-opacity-off"
+              class="til-ul til-white til-center"
             >
               <li class="til-dark-grey til-xlarge til-padding-32">Guitar & Vocal</li>
               <li class="til-padding-16">Guitar Playing</li>
               <li class="til-padding-16">Music Theory</li>
               <li class="til-padding-16">Advanced Guitar Skills</li>
               <li class="til-padding-16">Vocal Classes</li>
-              <li class="til-padding-16">
-                <h2>$ 50</h2>
-                <span class="til-opacity">per month</span>
-              </li>
+            
               <li class="til-light-grey til-padding-24">
                 <button
-                  class="til-button til-white til-padding-large til-hover-black"
+                  class="til-button til-white til-padding-large til-hover-black border border-info"
                 >
-                  Sign Up
+                  Contact me
                 </button>
               </li>
             </ul>
@@ -236,7 +235,7 @@
         </div>
 
         <!-- Testimonials -->
-        <h3 class="til-padding-24 til-text-light-grey">My Happy Clients</h3>
+        <!-- <h3 class="til-padding-24 til-text-light-grey">My Happy Clients</h3>
         <img
           src="./images/chris.jpg"
           alt="Avatar"
@@ -260,7 +259,7 @@
           <span class="til-large til-margin-right">Rebecca Flex.</span> CEO at
           Company.
         </p>
-        <p>He's one of the best web designer we've ever worked with!</p>
+        <p>He's one of the best web designer we've ever worked with!</p> -->
         <!-- End About Section -->
       </div>
 
@@ -405,5 +404,19 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myNav");
+  var navbtns = header.getElementsByClassName("nav-btn");
+  for (var i = 0; i < navbtns.length; i++) {
+    navbtns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  console.log("hey");
+  </script> 
+
+</body>
 </html>

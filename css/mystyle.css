@@ -665,6 +665,9 @@ a {
   .til-image-small {
     display: none;
   }
+  .til-concert-small{
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -693,6 +696,10 @@ a {
 
   .til-profile-pic {
     width: 82%;
+  }
+
+  .til-concert-big{
+    display: none !important;
   }
 }
 
@@ -1240,11 +1247,17 @@ a {
 .til-rightbar {
   border-right: 6px solid #ccc !important;
 }
-.til-section,
-.til-code {
+.til-section {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
+  text-align: center !important;
 }
+
+.til-contact {
+  display: inline-block;
+  text-align: left;
+}
+
 .til-margin {
   margin: 16px !important;
 }

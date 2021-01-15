@@ -253,8 +253,16 @@ hr {
 }
 .til-image {
   max-width: 100%;
-  height: auto;
 }
+
+.til-profile-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
 img {
   vertical-align: middle;
 }
@@ -350,6 +358,7 @@ a {
   width: 575px;
   height: 330px;
   padding: 5px;
+  margin: auto;
 }
 
 .til-btn.til-disabled:hover,
@@ -652,9 +661,16 @@ a {
   .small-nav-bar {
     display: none !important;
   }
+
+  .til-image-small {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .til-image {
+    display: none;
+  }
   .my-vids {
     width: 100%;
   }
@@ -665,6 +681,18 @@ a {
 
   .my-stage-name {
     text-align: center;
+  }
+
+  .my-container {
+    padding: 0.8rem;
+    padding-top: 0;
+  }
+  .intro {
+    font-size: 2rem !important;
+  }
+
+  .til-profile-pic {
+    width: 82%;
   }
 }
 
@@ -719,13 +747,14 @@ a {
   margin-right: auto;
   font-family: "Yusei Magic", sans-serif;
   color: #eae8c3;
+  text-align: center;
 }
 
 .sub-title {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #009688 !important;
+  font-size: 1rem;
+  color: #09bead !important;
 }
 
 .til-content {
@@ -811,6 +840,9 @@ a {
   }
   .til-medium p {
     text-align: center;
+  }
+  .sub-title {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 993px) {
@@ -1324,6 +1356,17 @@ a {
   color: #fff !important;
   background-color: #607d8b !important;
 }
+
+.nav-item {
+  margin: 0 auto;
+}
+
+.nav-item:hover {
+  background-color: #009688;
+  padding: 0 7px;
+  border-radius: 5px;
+}
+
 .til-green,
 .til-hover-green:hover {
   color: #fff !important;
@@ -1380,6 +1423,10 @@ a {
 
 .intro {
   font-family: "Kufam", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #f0f173;
+  padding-top: 1rem;
 }
 
 .logo-bg {
